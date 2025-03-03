@@ -5,6 +5,7 @@ conn = duckdb.connect(database='./dev.duckdb', read_only=False)
 
 # List of tables to query
 tables = [
+    "mart_egames",
     "mom_analysis_by_domain",
     "mom_analysis_by_region",
     "mom_analysis_by_sport",

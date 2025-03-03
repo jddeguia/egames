@@ -11,7 +11,7 @@ WITH monthly_data AS (
         sport,
         SUM(turnover) AS total_turnover,
         SUM(profit) AS total_profit
-    FROM {{ ref('stg_egames') }}
+    FROM {{ ref('mart_egames') }}
     GROUP BY sport, year, month_number
 ),
 

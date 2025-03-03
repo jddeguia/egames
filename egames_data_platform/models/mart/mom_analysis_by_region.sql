@@ -11,7 +11,7 @@ WITH monthly_data AS (
         region,
         SUM(turnover) AS total_turnover,
         SUM(profit) AS total_profit
-    FROM {{ ref('stg_egames') }}
+    FROM {{ ref('mart_egames') }}
     GROUP BY region, year, month_number
 ),
 
