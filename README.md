@@ -4,6 +4,7 @@
 ## Setup
 The process involved in the project is shown in the image below
 ![image](https://github.com/user-attachments/assets/6111c7ab-67f7-4ae0-bc54-beda27f34e16)
+- We clean the given CSV file to make it compatible in dbt environment
 - We load the given CSV file and use dbt seed to load it on a dbt project
 - We transform the CSV file into medallion layers (base, staging, and mart model)
 - We test the transformed model using a Python script that connects to DuckDB
@@ -26,7 +27,8 @@ The dashboard contains the following charts
 
 ## Data Lineage
 This is the data lineage of the models involved in the dashboard
-![image](https://github.com/user-attachments/assets/4c070875-2eed-4ee2-bd5d-9c7cad8cc89a)
+![image](https://github.com/user-attachments/assets/5b7b97fa-bc14-46d3-8b40-4940cde974af)
+
 
 So the philosophy of the data modelling is
 - expose the data source in dbt project (base layer)
