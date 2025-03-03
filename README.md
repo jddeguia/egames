@@ -15,9 +15,12 @@ The output of the assessment is a dashboard.
 
 It can be accessed on this dashboard link
 
-[Dashboard](https://lookerstudio.google.com/reporting/87cc1617-b2be-4219-8094-064c82b2439c)
+[Dashboard](https://lookerstudio.google.com/reporting/ca5e4b81-ee23-41cf-bc0a-b876bccaf5a3)
 
 This is a screenshot of the dashboard for order analysis
+![image](https://github.com/user-attachments/assets/69bca092-d782-4594-94c4-683721cbf05a)
+![image](https://github.com/user-attachments/assets/07cda317-e912-436f-b811-229cdda8dcba)
+![image](https://github.com/user-attachments/assets/4273a01b-c094-4520-be24-c729b5e2aad0)
 
 
 The dashboard contains the following charts
