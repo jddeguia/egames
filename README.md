@@ -36,4 +36,4 @@ So the philosophy of the data modelling is
 
 The SQL files and Python scripts used in this project can be accessed in this link
 
-[SQL and Python files](https://github.com/jddeguia/gorocky-store-analysis/tree/main/gorocky_data_platform)
+[SQL and Python files](https://github.com/jddeguia/egames/tree/main/egames_data_platform)
