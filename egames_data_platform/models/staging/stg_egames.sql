@@ -44,6 +44,7 @@ cast_data_type AS (
 SELECT 
     month as record_date,
     DATE_TRUNC('month', month) AS month_date,
+    DATE_TRUNC('year', month) AS year_date,
     EXTRACT(MONTH FROM month) AS month_number,
     EXTRACT(DAY FROM month) AS day,
     EXTRACT(YEAR FROM month) AS year,

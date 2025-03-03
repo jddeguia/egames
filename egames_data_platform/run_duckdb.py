@@ -27,11 +27,9 @@ import duckdb
 # Connect to the DuckDB database
 conn = duckdb.connect(database='./dev.duckdb', read_only=True)
 
-# Define the table name
-table = "base_egames"
 
 # Query to select the first 5 rows
-query = f"SELECT * FROM stg_egames LIMIT 50"
+query = f"SELECT * FROM yoy_analysis ORDER BY year DESC LIMIT 100"
 
 # Execute the query and fetch the results
 df = conn.execute(query).fetchdf()
