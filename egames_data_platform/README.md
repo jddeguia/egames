@@ -1,15 +1,16 @@
-Welcome to your new dbt project!
+# Data Modelling using DBT
 
-### Using the starter project
+## Models
 
-Try running the following commands:
-- dbt run
-- dbt test
+![image](https://github.com/user-attachments/assets/4c070875-2eed-4ee2-bd5d-9c7cad8cc89a)
 
+The models are separated into 3 layers
+- base layer. This is where we expose the data source in dbt project. The name of the model is `base_egames.sql`
+- staging layer. This is where we clean the column and explicitly cast the appropriate data type on each column. The name of the model is `stg_egames.sql`
+- mart layer. This is where we expose the end result of the cleaned model to end users. We used 6 mart models for yoy and mom analysis (per domain, sport, and region). 
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+## Test the models
+- We have a Python script named `run_duckdb.py` that exports the mart model as a CSV. We use CSV as a data source on our dashboard
+
+## Insights
+
