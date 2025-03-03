@@ -2,7 +2,7 @@
 
 ## Models
 
-![image](https://github.com/user-attachments/assets/4c070875-2eed-4ee2-bd5d-9c7cad8cc89a)
+![image](https://github.com/user-attachments/assets/5b7b97fa-bc14-46d3-8b40-4940cde974af)
 
 The models are separated into 3 layers
 - base layer. This is where we expose the data source in dbt project. The name of the model is `base_egames.sql`
