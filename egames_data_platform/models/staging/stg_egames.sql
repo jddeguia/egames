@@ -33,7 +33,7 @@ cast_data_type AS (
             {% elif data_type == 'float' %}
                 CAST({{ column }} AS FLOAT) AS {{ column }}
             {% elif data_type == 'date' %}
-                TRY_CAST(STRPTIME({{ column }}, '%m/%d/%Y') AS DATE) AS {{ column }}
+                TRY_CAST(STRPTIME({{ column }}, '%d/%m/%Y') AS DATE) AS {{ column }}
             {% else %}
                 {{ column }} AS {{ column }}
             {% endif %}

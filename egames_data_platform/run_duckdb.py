@@ -29,7 +29,7 @@ conn = duckdb.connect(database='./dev.duckdb', read_only=True)
 
 
 # Query to select the first 5 rows
-query = f"SELECT * FROM yoy_analysis ORDER BY year DESC LIMIT 100"
+query = f"SELECT * FROM mom_analysis_by_region ORDER BY year, month_number DESC"
 
 # Execute the query and fetch the results
 df = conn.execute(query).fetchdf()
